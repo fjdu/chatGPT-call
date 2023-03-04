@@ -1,0 +1,74 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 500px;
+        height: 750px;
+      }
+
+      .userInput, .replyByChatGPT, .prevInput {
+        font-size: 100%;
+        width: 400px;
+      }
+
+      .apiKey {
+        font-size: 65%;
+        width: 400px;
+        background-color: gray;
+      }
+
+      .replyByChatGPT {
+        background-color: #9999bb;
+        height: auto;
+      }
+
+      .prevInput {
+        background-color: #779977;
+      }
+
+      #cellSendToChatGPT {
+        text-align: right;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+
+    <table>
+    <tbody id='tbDialog'>
+
+    <tr>
+    <td>
+    <textarea id="userInput" class="userInput" rows=15 placeholder="Input text to be sent to ChatGPT"></textarea>
+    </td>
+    </tr>
+
+    <tr><td id='cellSendToChatGPT'>
+    <button id='sendToChatGPT'>Send</button>
+    </td></tr>
+
+    </tbody>
+    </table>
+
+    <input id='apiKey' class='apiKey' placeholder='API Key'></input>
+
+  </body>
+</html>
