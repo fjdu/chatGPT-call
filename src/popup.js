@@ -6,17 +6,25 @@ completion_msgs = [];
 
 preset_prompts_def = [
   '',
-  'Summarize the following in English:',
-  'Summarize the following in English succinctly:',
-  'Translate the following Chinese text into English:',
-  'Continue the following in English:',
-  'Reply the following in English:',
+  'Summarize in English:',
+  'Summarize in English in less than 5 sentences:',
+  'Translate into English:',
+  'Translate into English with examples:',
+  'How to pronounce:',
+  'Continue in English:',
+  'Reply in English:',
+  'Comment in English:',
+  'Proofread this:',
   '用中文概括下面的内容:',
   '用中文概括下面的内容，不超过5句话:',
   '润色下面的英文:',
+  '翻译为中文:',
+  '翻译为中文，可包含多个义项，最好有例句:',
   '将下面这段中文翻译为英文:',
   '用中文续写下面的内容:',
-  '用中文回复下面的内容:'
+  '用中文回复下面的内容:',
+  '用中文评价下面的内容:',
+  '检查下面的内容有无错误:'
 ];
 
 async function sendToChatGPT() {

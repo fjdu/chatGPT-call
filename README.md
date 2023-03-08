@@ -1,4 +1,4 @@
-Available at [Chrome Store]().
+Available at [Chrome Store](https://chrome.google.com/webstore/detail/chatgpt-simple/jacmfdljbkmgomdnpeibonaaholjbieo?hl=zh-CN&authuser=0).
 
 This is a plugin for the Google Chrome Browser.  It simply calls the OpenAI ChatGPT API and displays the results.
 
